@@ -7,6 +7,16 @@ body {
   color: #1f2937;
   margin: 0;
   padding: 0;
+  /* Improve mobile touch interactions */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Improve mobile scrolling */
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 .dark {
@@ -21,4 +31,34 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Ensure buttons and interactive elements are touch-friendly */
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improve text readability on mobile */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+}
+
+/* Prevent zoom on input focus for iOS */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select, textarea, input[type="text"], input[type="password"], 
+  input[type="datetime"], input[type="datetime-local"], 
+  input[type="date"], input[type="month"], input[type="time"], 
+  input[type="week"], input[type="number"], input[type="email"], 
+  input[type="url"] {
+    font-size: 16px;
+  }
 }

@@ -160,8 +160,8 @@ const About = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="space-y-16"
+          viewport={{ once: true, amount: 0.1 }}
+          className="space-y-12 md:space-y-16"
         >
           <motion.div variants={itemVariants} className="text-center relative">
             <motion.div
@@ -179,19 +179,19 @@ const About = () => {
               <Sparkles className="h-10 w-10 text-blue-400 drop-shadow-lg shadow-blue-400/50" />
             </motion.div>
             
-            <h2 className="text-4xl sm:text-5xl font-black bg-gradient-to-r from-white via-blue-200 to-purple-300 bg-clip-text text-transparent mb-6 drop-shadow-2xl">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black bg-gradient-to-r from-white via-blue-200 to-purple-300 bg-clip-text text-transparent mb-4 md:mb-6 drop-shadow-2xl">
               About Me
             </h2>
             <motion.div 
-              className="w-32 h-1.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 mx-auto mb-8 rounded-full shadow-lg shadow-blue-500/30"
+              className="w-24 md:w-32 h-1.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 mx-auto mb-6 md:mb-8 rounded-full shadow-lg shadow-blue-500/30"
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
             ></motion.div>
             
-            <div className="max-w-4xl mx-auto space-y-6">
+            <div className="max-w-4xl mx-auto space-y-4 md:space-y-6">
               <motion.p 
-                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed px-2"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -202,7 +202,7 @@ const About = () => {
               </motion.p>
               
               <motion.p 
-                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed px-2"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -219,30 +219,30 @@ const About = () => {
           {/* Technical Skills Section */}
           <motion.div
             variants={containerVariants}
-            className="space-y-12"
+            className="space-y-8 md:space-y-12"
           >
             <motion.div variants={itemVariants} className="text-center">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-2 flex items-center justify-center gap-2">
-                <span className="text-2xl sm:text-3xl">💻</span>
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 flex items-center justify-center gap-2">
+                <span className="text-xl sm:text-2xl lg:text-3xl">💻</span>
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                   Technical Skills
                 </span>
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto px-4">
                 Here are the technologies and tools I work with to bring ideas to life
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
               {/* Programming Languages */}
               <motion.div
                 variants={cardVariants}
-                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300"
+                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-300"
               >
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                <h4 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
                   🌐 Programming Languages
                 </h4>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-2 gap-2 md:gap-3">
                   {['JavaScript', 'TypeScript', 'Python', 'Java', 'C++', 'HTML5', 'CSS3'].map((skill, index) => (
                     <motion.div
                       key={skill}
@@ -250,9 +250,9 @@ const About = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.05, y: -2 }}
-                      className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-3 text-center border border-blue-100 dark:border-blue-800 hover:shadow-md transition-all duration-200"
+                      className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-2 md:p-3 text-center border border-blue-100 dark:border-blue-800 hover:shadow-md transition-all duration-200"
                     >
-                      <span className="text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
+                      <span className="text-xs md:text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -261,12 +261,12 @@ const About = () => {
               {/* Frameworks & Libraries */}
               <motion.div
                 variants={cardVariants}
-                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-green-300 dark:hover:border-green-600 transition-all duration-300"
+                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 dark:border-gray-700 hover:border-green-300 dark:hover:border-green-600 transition-all duration-300"
               >
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                <h4 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
                   🧰 Frameworks & Libraries
                 </h4>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-2 gap-2 md:gap-3">
                   {['React', 'Next.js', 'Node.js', 'Express.js', 'Django', 'FastAPI','Spring Boot','Streamlit'].map((skill, index) => (
                     <motion.div
                       key={skill}
@@ -274,9 +274,9 @@ const About = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.05, y: -2 }}
-                      className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-lg p-3 text-center border border-green-100 dark:border-green-800 hover:shadow-md transition-all duration-200"
+                      className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-lg p-2 md:p-3 text-center border border-green-100 dark:border-green-800 hover:shadow-md transition-all duration-200"
                     >
-                      <span className="text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
+                      <span className="text-xs md:text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -285,12 +285,12 @@ const About = () => {
               {/* Tools & Technologies */}
               <motion.div
                 variants={cardVariants}
-                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-600 transition-all duration-300"
+                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-600 transition-all duration-300"
               >
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                <h4 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
                   🧪 Tools & Technologies
                 </h4>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-2 gap-2 md:gap-3">
                   {['Git', 'Docker', 'VS Code', 'Figma', 'Postman', 'Webpack', 'Jenkins'].map((skill, index) => (
                     <motion.div
                       key={skill}
@@ -298,9 +298,9 @@ const About = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.05, y: -2 }}
-                      className="bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 rounded-lg p-3 text-center border border-orange-100 dark:border-orange-800 hover:shadow-md transition-all duration-200"
+                      className="bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 rounded-lg p-2 md:p-3 text-center border border-orange-100 dark:border-orange-800 hover:shadow-md transition-all duration-200"
                     >
-                      <span className="text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
+                      <span className="text-xs md:text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -309,12 +309,12 @@ const About = () => {
               {/* Cloud Platforms & DevOps */}
               <motion.div
                 variants={cardVariants}
-                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-purple-300 dark:hover:border-purple-600 transition-all duration-300"
+                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 dark:border-gray-700 hover:border-purple-300 dark:hover:border-purple-600 transition-all duration-300"
               >
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                <h4 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
                   ☁️ Cloud Platforms & DevOps
                 </h4>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-2 gap-2 md:gap-3">
                   {['Firebase', 'AWS', 'Google Cloud (GCP)', 'CI/CD Pipelines'].map((skill, index) => (
                     <motion.div
                       key={skill}
@@ -322,9 +322,9 @@ const About = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.05, y: -2 }}
-                      className="bg-gradient-to-r from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 rounded-lg p-3 text-center border border-purple-100 dark:border-purple-800 hover:shadow-md transition-all duration-200"
+                      className="bg-gradient-to-r from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 rounded-lg p-2 md:p-3 text-center border border-purple-100 dark:border-purple-800 hover:shadow-md transition-all duration-200"
                     >
-                      <span className="text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
+                      <span className="text-xs md:text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -333,12 +333,12 @@ const About = () => {
               {/* Databases & Storage */}
               <motion.div
                 variants={cardVariants}
-                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-pink-300 dark:hover:border-pink-600 transition-all duration-300 lg:col-span-2"
+                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-gray-200 dark:border-gray-700 hover:border-pink-300 dark:hover:border-pink-600 transition-all duration-300 md:col-span-2"
               >
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                <h4 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
                   🛢️ Databases & Storage
                 </h4>
-                <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-3">
                   {['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'H2DB'].map((skill, index) => (
                     <motion.div
                       key={skill}
@@ -346,9 +346,9 @@ const About = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.05, y: -2 }}
-                      className="bg-gradient-to-r from-pink-50 to-rose-50 dark:from-pink-900/20 dark:to-rose-900/20 rounded-lg p-3 text-center border border-pink-100 dark:border-pink-800 hover:shadow-md transition-all duration-200"
+                      className="bg-gradient-to-r from-pink-50 to-rose-50 dark:from-pink-900/20 dark:to-rose-900/20 rounded-lg p-2 md:p-3 text-center border border-pink-100 dark:border-pink-800 hover:shadow-md transition-all duration-200"
                     >
-                      <span className="text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
+                      <span className="text-xs md:text-sm font-medium text-gray-800 dark:text-gray-200">{skill}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -359,7 +359,7 @@ const About = () => {
           {/* Enhanced Skills Section */}
           <motion.div
             variants={containerVariants}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
           >
             {skills.map((skill, index) => (
               <motion.div
