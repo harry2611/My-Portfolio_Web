@@ -4,18 +4,18 @@ import { Github, ExternalLink, Sparkles, Code } from 'lucide-react'
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/harshzele/ecommerce-platform",
-      icon: "🛒",
-      pattern: "shopping"
+      title: "Stock Price Visualizer",
+      description: "Built an interactive web app using Python, Pandas, and Streamlit  to visualize 7-day stock trends with real-time data from the Twelve Data API, secured via environment variables and deployed on Render.",
+      tech: ["Python", "Streamlit", "Pandas","Twelve Data API", "Render"],
+      github: "https://github.com/harry2611/Stock-App",
+      icon: "📈",
+      pattern: "finance"
     },
     {
       title: "Task Management App",
       description: "Real-time collaborative task management application with drag-and-drop functionality and team collaboration features.",
       tech: ["React", "TypeScript", "Socket.io", "PostgreSQL"],
-      github: "https://github.com/harshzele/task-manager",
+      github: "https://github.com/harry2611/Task-Management-App",
       icon: "📋",
       pattern: "tasks"
     },
@@ -45,9 +45,9 @@ const Projects = () => {
     },
     {
       title: "Portfolio Website",
-      description: "Modern, responsive portfolio website built with React and Framer Motion, featuring interactive animations and dark mode.",
-      tech: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/harshzele/portfolio",
+      description: "Modern, responsive portfolio built with React, TypeScript, and Tailwind CSS, featuring sleek dark theme, smooth Framer Motion animations, interactive UI, and optimized performance with Vite.",
+      tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion","PostCSS", "Git","Vercel"],
+      github: "https://github.com/harry2611/My-Portfolio_Web",
       icon: "💼",
       pattern: "portfolio"
     }
@@ -55,7 +55,7 @@ const Projects = () => {
 
   const getProjectPattern = (pattern: string) => {
     switch (pattern) {
-      case 'shopping':
+      case 'finance':
         return (
           <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600">
             {/* Animated laptop */}

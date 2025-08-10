@@ -14,7 +14,7 @@ const About = () => {
     {
       icon: <Server className="h-8 w-8" />,
       title: "Backend Development", 
-      description: "Node.js, Express, Python, PostgreSQL, MongoDB",
+      description: "Node.js, Express, Python, PostgreSQL, MongoDB, Java with Spring Boot",
       color: "from-green-500 to-emerald-500",
       bgGlow: "bg-green-500/10"
     },
@@ -267,7 +267,7 @@ const About = () => {
                   🧰 Frameworks & Libraries
                 </h4>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                  {['React', 'Next.js', 'Node.js', 'Express.js', 'Django', 'FastAPI', 'Streamlit'].map((skill, index) => (
+                  {['React', 'Next.js', 'Node.js', 'Express.js', 'Django', 'FastAPI','Spring Boot','Streamlit'].map((skill, index) => (
                     <motion.div
                       key={skill}
                       initial={{ opacity: 0, scale: 0.8 }}

@@ -25,10 +25,10 @@ const Experience = () => {
       icon: "💼"
     },
     {
-      title: "Full Stack Developer Intern",
-      company: "StartupXYZ",
-      location: "Remote",
-      period: "Jun 2022 - Dec 2022",
+      title: "Web Developmentalso  Intern",
+      company: "Prudent Tech IT Solutions",
+      location: "Mumbai, India",
+      period: "Jan 2024 - Jun 2024",
       type: "Internship",
       description: "Developed and maintained web applications using the MERN stack. Collaborated with cross-functional teams to deliver high-quality features on tight deadlines.",
       achievements: [
