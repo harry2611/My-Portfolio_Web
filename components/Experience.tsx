@@ -13,10 +13,10 @@ const Experience = () => {
       location: "Los Angeles, CA",
       period: "May 2025 - Present",
       type: "Internship",
-      description: "Led the development of a React-based dashboard serving 10k+ users. Implemented modern UI/UX practices and improved performance by 40%. Mentored junior developers and established coding standards.",
+      description: "Led the development of a React-based dashboard serving 10k+ users. Implemented modern UI/UX practices and improved performance by 40%.",
       achievements: [
         "Reduced page load times by 40% through code optimization",
-        "Led a team of 4 developers on major product features",
+        "Led a team of 3 developers on major product features",
         "Implemented automated testing that reduced bugs by 60%",
         "Designed and built reusable component library"
       ],
