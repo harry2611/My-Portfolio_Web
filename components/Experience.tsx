@@ -13,31 +13,31 @@ const Experience = () => {
       location: "Los Angeles, CA",
       period: "May 2025 - Present",
       type: "Internship",
-      description: "Led the development of a React-based dashboard serving 10k+ users. Implemented modern UI/UX practices and improved performance by 40%.",
+      description: "Developed a full-stack healthcare platform addressing post-surgical care inefficiencies through real-time risk alerts, integrated provider-patient calls, and automated scheduling, reducing patient follow-up delays by 30% and eliminating missed alerts.",
       achievements: [
-        "Reduced page load times by 40% through code optimization",
-        "Led a team of 3 developers on major product features",
-        "Implemented automated testing that reduced bugs by 60%",
-        "Designed and built reusable component library"
+        "RBuilt responsive dashboards with advanced search, real-time validation, and instant sync, managing 500+ patient records in under 2s load times",
+        "Implemented AI-powered voice call integration for provider-patient communication, ensuring zero missed alerts",
+        "Dockerized deployments and optimized APIs, improving response times by 40% during testing",
+        "Enhanced patient care efficiency with automated scheduling and real-time alerts system"
       ],
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "GraphQL"],
+      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Docker", "PostgreSQL"],
       gradient: "from-blue-500 via-purple-500 to-pink-500",
       icon: "💼"
     },
     {
-      title: "Web Developmentalso  Intern",
+      title: "Web Development Intern",
       company: "Prudent Tech IT Solutions",
       location: "Mumbai, India",
       period: "Jan 2024 - Jun 2024",
       type: "Internship",
-      description: "Developed and maintained web applications using the MERN stack. Collaborated with cross-functional teams to deliver high-quality features on tight deadlines.",
+      description: "Contributed to the development of scalable front-end applications using React.js. Focused on building reusable UI components, improving performance, and integrating APIs for seamless user experiences.",
       achievements: [
-        "Built 3 major features from conception to deployment",
-        "Improved API response times by 25%",
-        "Contributed to mobile app development using React Native",
-        "Participated in code reviews and sprint planning"
+        "Led front-end development for 7+ React.js projects, implementing reusable components and responsive designs",
+        "Integrated RESTful APIs with Axios & Postman, improving reliability and reducing development time by 25%",
+        "Engineered optimized React components with code splitting, lazy loading, and asset minification, cutting average page load time by 45% (verified via Lighthouse & Core Web Vitals)",
+        "Collaborated with backend teams to ensure smooth data flow and maintainability across projects"
       ],
-      technologies: ["React", "Node.js", "MongoDB", "Express", "React Native"],
+      technologies: ["React", "JavaScript", "HTML", "CSS3", "React", "Postman", "Git"],
       gradient: "from-green-500 via-teal-500 to-blue-500",
       icon: "🚀"
     }
