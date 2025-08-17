@@ -15,7 +15,7 @@ const Experience = () => {
       type: "Internship",
       description: "Developed a full-stack healthcare platform addressing post-surgical care inefficiencies through real-time risk alerts, integrated provider-patient calls, and automated scheduling, reducing patient follow-up delays by 30% and eliminating missed alerts.",
       achievements: [
-        "RBuilt responsive dashboards with advanced search, real-time validation, and instant sync, managing 500+ patient records in under 2s load times",
+        "Built responsive dashboards with advanced search, real-time validation, and instant sync, managing 500+ patient records in under 2s load times",
         "Implemented AI-powered voice call integration for provider-patient communication, ensuring zero missed alerts",
         "Dockerized deployments and optimized APIs, improving response times by 40% during testing",
         "Enhanced patient care efficiency with automated scheduling and real-time alerts system"
