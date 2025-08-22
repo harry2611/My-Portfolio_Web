@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Star, Sparkles, Heart, Calendar } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Star, Sparkles, Heart, Calendar, FileText } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card'
 import { Button } from './ui/button'
 import emailjs from '@emailjs/browser'
@@ -171,7 +171,8 @@ const Contact = () => {
               {[
                 { icon: Mail, label: "Email", value: "zharsh2611@gmail.com", href: "mailto:zharsh2611@gmail.com", color: "bg-red-100 dark:bg-red-900" },
                 { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/harsh-zele/", href: "https://www.linkedin.com/in/harsh-zele/", color: "bg-blue-100 dark:bg-blue-900" },
-                { icon: Github, label: "GitHub", value: "github.com/harry2611", href: "https://github.com/harry2611", color: "bg-gray-100 dark:bg-gray-900" }
+                { icon: Github, label: "GitHub", value: "github.com/harry2611", href: "https://github.com/harry2611", color: "bg-gray-100 dark:bg-gray-900" },
+                { icon: FileText, label: "Resume", value: "View My Resume", href: "https://drive.google.com/file/d/1mFvXZtav54i_ovRhq8MUsz8wmYYjQIIH/view?usp=drive_link", color: "bg-emerald-100 dark:bg-emerald-900" }
               ].map((contact, index) => (
                 <motion.div
                   key={index}
@@ -385,6 +386,34 @@ const Contact = () => {
             </form>
           </motion.div>
         </div>
+
+        {/* Resume Download Section */}
+        <motion.div
+          className="mt-16 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            className="inline-block"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <a
+              href="https://drive.google.com/file/d/1mFvXZtav54i_ovRhq8MUsz8wmYYjQIIH/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+            >
+              <FileText className="w-6 h-6 group-hover:animate-pulse" />
+              <span className="text-lg">View My Resume</span>
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+              />
+            </a>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   )

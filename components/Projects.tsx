@@ -36,7 +36,7 @@ const Projects = () => {
       pattern: "social"
     },
     {
-      title: "AI Chat Bot",
+      title: "Smart Feedback Analyzer",
       description: "Intelligent chatbot using natural language processing with machine learning capabilities and contextual responses.",
       tech: ["Python", "TensorFlow", "FastAPI", "React"],
       github: "https://github.com/harshzele/ai-chatbot",
