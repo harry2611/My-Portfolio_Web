@@ -37,9 +37,9 @@ const Projects = () => {
     },
     {
       title: "Smart Feedback Analyzer",
-      description: "Intelligent chatbot using natural language processing with machine learning capabilities and contextual responses.",
-      tech: ["Python", "TensorFlow", "FastAPI", "React"],
-      github: "https://github.com/harshzele/ai-chatbot",
+      description: "Built an AI-driven feedback analysis platform that processed 10K+ reviews in real time, improving insights and efficiency by 80%.",
+      tech: ["Python", "TypeScript", "React", "D3.js", "FastAPI", "SQLAlchemy", "PostgreSQL", "HuggingFace Transformers", "spaCy", "Docker", "Git"],
+      github: "https://github.com/harry2611/Smart-Feedback-Analyzer",
       icon: "🤖",
       pattern: "ai"
     },
