@@ -14,7 +14,7 @@ const Projects = () => {
     {
       title: "Task Management App",
       description: "Real-time collaborative task management application with drag-and-drop functionality and team collaboration features.",
-      tech: ["React", "TypeScript", "Socket.io", "PostgreSQL"],
+      tech: ["Java", "Springboot", "React", "TypeScript", "FastApi"],
       github: "https://github.com/harry2611/Task-Management-App",
       icon: "📋",
       pattern: "tasks"
