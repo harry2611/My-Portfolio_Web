@@ -8,34 +8,32 @@ const Experience = () => {
   
   const experiences = [
     {
-      title: "Frontend Developer Intern",
+      title: "Full Stack Development Intern",
       company: "Lumina AI",
       location: "Los Angeles, CA",
       period: "May 2025 - Present",
       type: "Internship",
       description: "Developed a full-stack healthcare platform addressing post-surgical care inefficiencies through real-time risk alerts, integrated provider-patient calls, and automated scheduling, reducing patient follow-up delays by 30% and eliminating missed alerts.",
       achievements: [
-        "Built responsive dashboards with advanced search, real-time validation, and instant sync, managing 500+ patient records in under 2s load times",
-        "Implemented AI-powered voice call integration for provider-patient communication, ensuring zero missed alerts",
-        "Dockerized deployments and optimized APIs, improving response times by 40% during testing",
-        "Enhanced patient care efficiency with automated scheduling and real-time alerts system"
+        "Delivered 5+ interactive clinical dashboards using React and TypeScript, enhancing data visibility for clinicians and achieving sub-2-second load times across 500+ patient records.",
+        "Devised JSON-based REST APIs with Node.js and PostgreSQL for patient data management, containerized services using Docker, and reduced deployment time by 40% to ensure scalable, reliable access.",
+        "Integrated Twilio AI–powered call flows with AWS Lambda and S3 to automate patient reminders, reducing manual follow-ups by 35% and improving engagement and continuity of care.",
       ],
       technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Docker", "PostgreSQL"],
       gradient: "from-blue-500 via-purple-500 to-pink-500",
       icon: "💼"
     },
     {
-      title: "Web Development Intern",
+      title: "Software Development Intern",
       company: "Prudent Tech IT Solutions",
       location: "Mumbai, India",
-      period: "Jan 2024 - Jun 2024",
+      period: "Jan 2024 - Dec 2024",
       type: "Internship",
       description: "Contributed to the development of scalable front-end applications using React.js. Focused on building reusable UI components, improving performance, and integrating APIs for seamless user experiences.",
       achievements: [
-        "Led front-end development for 7+ React.js projects, implementing reusable components and responsive designs",
-        "Integrated RESTful APIs with Axios & Postman, improving reliability and reducing development time by 25%",
-        "Engineered optimized React components with code splitting, lazy loading, and asset minification, cutting average page load time by 45% (verified via Lighthouse & Core Web Vitals)",
-        "Collaborated with backend teams to ensure smooth data flow and maintainability across projects"
+        "Spearheaded cost and material management services using Spring Boot and Hibernate, streamlining data workflows and leveraging MySQL indexing to cut execution time by 40% through query optimization and caching.",
+        " Implemented modular Kafka-based microservices and integrated Spring Boot APIs with Angular frontend, enhancing scalability, strengthening data-flow reliability, and accelerating CI/CD cycles by 25% under high traffic.",
+        "Crafted a serverless API layer with AWS Lambda and API Gateway to enable on-demand functions, streamline integrations, eliminate redundant logic, and boost development velocity by 20%.",
       ],
       technologies: ["React", "JavaScript", "HTML", "CSS3", "React", "Postman", "Git"],
       gradient: "from-green-500 via-teal-500 to-blue-500",
