@@ -19,7 +19,7 @@ const Experience = () => {
         "Devised JSON-based REST APIs with Node.js and PostgreSQL for patient data management, containerized services using Docker, and reduced deployment time by 40% to ensure scalable, reliable access.",
         "Integrated Twilio AI–powered call flows with AWS Lambda and S3 to automate patient reminders, reducing manual follow-ups by 35% and improving engagement and continuity of care.",
       ],
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Docker", "PostgreSQL"],
+      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Docker", "AWS", "PostgreSQL"],
       gradient: "from-blue-500 via-purple-500 to-pink-500",
       icon: "💼"
     },
@@ -35,7 +35,7 @@ const Experience = () => {
         " Implemented modular Kafka-based microservices and integrated Spring Boot APIs with Angular frontend, enhancing scalability, strengthening data-flow reliability, and accelerating CI/CD cycles by 25% under high traffic.",
         "Crafted a serverless API layer with AWS Lambda and API Gateway to enable on-demand functions, streamline integrations, eliminate redundant logic, and boost development velocity by 20%.",
       ],
-      technologies: ["React", "JavaScript", "HTML", "CSS3", "React", "Postman", "Git"],
+      technologies: ["Java", "Spring Boot", "React", "JavaScript", "Angular", "AWS" "HTML & CSS", "MySQL", "Git"],
       gradient: "from-green-500 via-teal-500 to-blue-500",
       icon: "🚀"
     }
