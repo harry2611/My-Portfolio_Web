@@ -172,7 +172,7 @@ const Contact = () => {
                 { icon: Mail, label: "Email", value: "zharsh2611@gmail.com", href: "mailto:zharsh2611@gmail.com", color: "bg-red-100 dark:bg-red-900" },
                 { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/harsh-zele/", href: "https://www.linkedin.com/in/harsh-zele/", color: "bg-blue-100 dark:bg-blue-900" },
                 { icon: Github, label: "GitHub", value: "github.com/harry2611", href: "https://github.com/harry2611", color: "bg-gray-100 dark:bg-gray-900" },
-                { icon: FileText, label: "Resume", value: "View My Resume", href: "https://drive.google.com/file/d/1mFvXZtav54i_ovRhq8MUsz8wmYYjQIIH/view?usp=drive_link", color: "bg-emerald-100 dark:bg-emerald-900" }
+                { icon: FileText, label: "Resume", value: "View My Resume", href: "https://drive.google.com/file/d/1ECBdgCZgNJwsD69vDIz3EvcnTCRDXKiL/view?usp=sharing", color: "bg-emerald-100 dark:bg-emerald-900" }
               ].map((contact, index) => (
                 <motion.div
                   key={index}
